@@ -249,24 +249,27 @@ The "Risk Analysis" dashboard combines the average loan default rate with a red-
 ---
 ## Project Insight and Recommendations
 The bank loan data reveals:
-* Approximately 25% of the loans issued by this bank were charged-off.
-* Approximately 63% of charged-off loans are short-term.
+* Approximately **25%** of the loans issued by this bank were charged off.
+* Approximately **63%** of charged off loans are short-term.
 * ❌ **High-Risk Borrower Traits:**
 	* High DTI (low annual income + high monthly debt)
 	* Renting home
 	* Working in current job for one year or less
 	* Loans for the purpose of small business or renewable energy
+	* Less than "Good" credit score (669 or below)
  	* Multiple bankruptcies and/or tax liens
 
 In order to maximize profit, lending institutions should:
-* ❌ Implement stricter underwriting for borrowers exhibiting high-risk traits
-	* Renters, short-term employees, and low annual income paired with high monthly debt indicates an inability to be a reliable bank customer
-* ✅ Grant loans for borrowers showing signs of stable income
-	* 
-* ⚠️ Proceed with caution
-* 
-* 
+* ❌ **Implement stricter underwriting for borrowers exhibiting high-risk traits.**
+	* Renting, short-term employment, a bad credit score, and low annual income paired with high monthly debt indicates an unstable financial situation, which results in an unreliable bank customer.
+* ✅ **Grant loans for borrowers showing signs of stable income.**
+	* Home-owning, long-term employment, a good credit score, and high annual income paired with low monthly debt indicates a borrower with a reliable cash flow, which can be used to pay back loans with interest.
+* ⚠️ **Observe, evaluate, and proceed with caution when noticing red flags.**
+	* **Red Flags:** Loans for small business or renewable energy purposes, customers with bankruptcies or tax liens.
+ 	* Rather than outright reject borrowers with these traits, observe their entire customer profile and determine if other factors can maintain their ability to repay the loan.
+	* Home-owner, long-term employee, good credit score, and/or low DTI? → Grant, but limit loan amount
+	* Else, too risky to grant
 
 ---
 ## Conclusion
-This project uses financial data analytics to assist lending institutions in making smarter underwriting decisions. It finds patterns between borrower traits and loan default rate, to determine which traits are worth the risk of lending money, so that banks may optimize profit when evaluating a customer's likelihood of paying back their loan.
+This project uses financial data analysis to assist lending institutions in making smarter underwriting decisions. It finds patterns between borrower traits and loan default rate, to determine which traits are worth the risk of lending money, so that banks may optimize profit when evaluating a customer's likelihood of paying back their loan.
