@@ -1,11 +1,17 @@
 # Bank Loan Data Analysis
-Documentation of a comprehensive portfolio project that uses Python, SQL, and Tableau to interpret and visualize financial data.
+Loans are a primary source of revenue for lending institutions. Banks lend money to borrowers, with the expectation that the amount will gradually be repaid over time, in addition with added interest. This system comes with the risk of borrowers not being able to pay back their loans, thus resulting in a monetary loss for the financial institution.
+
+**BUSINESS PROBLEM:** Which borrower characteristics are strongly associated with defaulted loans? How can banks use this information to make profitable lending decisions?
+
+* ❌ "Approve anyone who applies for a loan" → More defaulted loans → **Increase in losses**
+* ❌ "Only approve perfect borrowers for loans" → Fewer loans dispersed → **Decrease in revenue**
+* ✅ "Approve borrowers whose characteristics indicate that they are more likely to repay their loan" → More loans dispersed and repaid → **Increase in profit**
 
 ---
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Dataset Summary](#dataset-summary)
-3. [Data Cleaning in **Python**](#data-cleaning-in-python)
+3. [Data Cleaning and Feature Engineering in **Python**](#data-cleaning-and-feature-engineering-in-python)
 4. [Exploratory Data Analysis in **MySQL Workbench**](#exploratory-data-analysis-in-mysql-workbench)
 5. [Visualizations in **Tableau Public**](#visualizations-in-tableau-public)
 6. [Project Insight and Recommendations](#project-insight-and-recommendations)
@@ -13,14 +19,21 @@ Documentation of a comprehensive portfolio project that uses Python, SQL, and Ta
 
 ---
 ## Project Overview
-
+This project analyzes a financial dataset to better understand the key factors influencing loan outcome. Python, SQL, and Tableau were used to find trends between borrower behavior and loan default rate, determine the best way to reduce loan default risk, and present the information to bank stakeholders.
 
 ---
 ## Dataset Summary
-The Kaggle dataset can be found [**here**](https://www.kaggle.com/datasets/zaurbegiev/my-dataset/data).
+The Kaggle dataset can be found [**here**](https://www.kaggle.com/datasets/zaurbegiev/my-dataset/data). Each row represents a single loan issued to a customer, and the characteristics of that customer and that loan.
+* **Size (Before Cleaning):** 100,514 rows, 19 columns
+	* **Size (After Cleaning):** 89,786 rows, 21 columns
+* **Loan Profile Data:** Loan ID, Loan Status, Current Loan Amount, Term, Purpose
+* **Customer Profile Data:** Customer ID, Credit Score, Annual Income, Years in Current Job, Home Ownership, Monthly Debt, Years of Credit History, Months Since Last Delinquent, Number of Open Accounts, Number of Credit Problems, Current Credit Balance, Maximum Open Credit, Bankruptcies, Tax Liens
+	* **Feature Engineered Columns:** Credit Score Range, DTI (Debt-to-Income Ratio)
+
+**NOTE:** This dataset categorizes Loan Status as either "Totally Paid" or "Charged Off". Charged off loans result in a financial loss for the bank, therefore this data will be used to calculate the loan default rate.
 
 ---
-## Data Cleaning in Python
+## Data Cleaning and Feature Engineering in Python
 This dataset had some numerical errors and inconsistent strings, which were corrected during the cleaning process. In addition, two new columns were feature engineered to show the impact of a customer's credit score range and debt-to-income ratio on their bank loan status.
 
 ### 1. Some values in the **`credit_score`** column have an extra "0" at the end of the number (ex: **`credit_score`** of **`729`** is mistakenly recorded as **`7290`**). Remove this extra "0" to ensure accurate data.
