@@ -3,9 +3,9 @@ Loans are a primary source of revenue for lending institutions. Banks lend money
 
 **BUSINESS PROBLEM:** Which borrower characteristics are strongly associated with defaulted loans? How can banks use this information to make profitable lending decisions?
 
-* ❌ "Approve anyone who applies for a loan" → More defaulted loans → **Increase in losses**
-* ❌ "Only approve perfect borrowers for loans" → Fewer loans dispersed → **Decrease in revenue**
-* ✅ "Approve borrowers whose characteristics indicate that they are more likely to pay back their loan" → More loans dispersed and repaid with interest → **Increase in profit**
+* ❌ _"Approve anyone who applies for a loan"_ → More defaulted loans → **Increase in losses**
+* ❌ _"Only approve perfect borrowers for loans"_ → Fewer loans dispersed → **Decrease in revenue**
+* ✅ _"Approve borrowers whose characteristics indicate that they are more likely to pay back their loan"_ → More loans dispersed and repaid with interest → **Increase in profit**
 
 ---
 ## Table of Contents
