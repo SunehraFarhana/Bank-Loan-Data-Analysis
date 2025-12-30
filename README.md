@@ -305,7 +305,7 @@ GROUP BY bankruptcy_range, tax_liens_range;
 ```
 <img width="386" height="180" alt="bank_loan_sql_5" src="https://github.com/user-attachments/assets/4a188c9a-0c63-442d-bd75-11da924df2f1" />
 
-An in-depth [**SQL file**](https://github.com/SunehraFarhana/Bank-Loan-Data-Analysis/blob/e31313e64fd8a140f01fbd20aa87f4103442902c/bank_loan_queries.sql) detailing every step of the querying process is available in this repository.
+An in-depth [**SQL file**](https://github.com/SunehraFarhana/Bank-Loan-Data-Analysis/blob/a68f95baebb2f53a0690801c2834dafadd591efe/bank_loan_queries.sql) detailing every step of the querying process is available in this repository.
 
 ---
 ## Visualizations in Tableau Public
@@ -321,7 +321,7 @@ The "Risk Analysis" dashboard combines the average loan default rate with a red-
 The bank loan data reveals:
 * Approximately **25%** of the loans issued by this bank were charged off.
 * Approximately **63%** of charged off loans are short-term.
-* ❌ **High-Risk Borrower Traits:**
+* 🚩 **High-Risk Borrower Traits:**
 	* High DTI (low annual income + high monthly debt)
 	* Renting home
 	* Working in current job for one year or less
@@ -335,7 +335,7 @@ In order to maximize profit, lending institutions should:
 * ✅ **Grant loans for borrowers showing signs of stable income.**
 	* Home-owning, long-term employment, a good credit score, and high annual income paired with low monthly debt indicates a borrower with a reliable cash flow, which can be used to pay back loans with interest.
 * ⚠️ **Observe, evaluate, and proceed with caution when noticing red flags.**
-	* **Red Flags:** Loans for small business or renewable energy purposes, customers with bankruptcies or tax liens.
+	* 🚩 **Red Flags:** Loans for small business or renewable energy purposes, customers with bankruptcies or tax liens.
  	* Rather than outright reject borrowers with these traits, observe their entire customer profile and determine if other factors can maintain their ability to repay the loan.
 	* Home-owner, long-term employee, good credit score, and/or low DTI? → **Grant, but limit loan amount**
 	* Else → **Too risky to grant**
