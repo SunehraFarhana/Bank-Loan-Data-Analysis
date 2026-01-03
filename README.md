@@ -30,7 +30,7 @@ The Kaggle dataset can be found [**here**](https://www.kaggle.com/datasets/zaurb
 * **Customer Profile Data:** Customer ID, Credit Score, Annual Income, Years in Current Job, Home Ownership, Monthly Debt, Years of Credit History, Months Since Last Delinquent, Number of Open Accounts, Number of Credit Problems, Current Credit Balance, Maximum Open Credit, Bankruptcies, Tax Liens
 	* **Feature Engineered Columns:** Credit Score Range, DTI (Debt-to-Income Ratio)
 
-**NOTE:** This dataset categorizes Loan Status as either "Totally Paid" or "Charged Off". Charged off loans result in a financial loss for the bank, therefore this data will be used to calculate the loan default rate.
+‼️ **NOTE:** This dataset categorizes Loan Status as either "Totally Paid" or "Charged Off". Charged off loans result in a financial loss for the bank, therefore this data will be used to calculate the loan default rate.
 
 ---
 ## Data Cleaning and Feature Engineering in Python
@@ -236,6 +236,7 @@ ORDER BY l.loan_status;
 ```
 <img width="501" height="76" alt="bank_loan_sql_2" src="https://github.com/user-attachments/assets/ab2a869b-8185-4073-be4b-db3ccc1d3480" />
 
+‼️ **NOTE:** The median current loan amount, annual income, and monthly debt was calculated, rather than the average, in order to account for outliers in the data. This results in a more accurate picture of the typical borrower.
 
 ### 3. What is the loan default rate by customer debt-to-income ratio? Which debt-to-income ratio has the highest default rate?
 ```sql
